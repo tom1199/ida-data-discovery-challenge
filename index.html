@@ -28,16 +28,26 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/ddc.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollupformenu.js"></script>
 
     <title>IDA Data Discovery Challenge</title>
 </head>
 
 <body>
     <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
+        <div id="top" class="navbar-inner">
             <div class="container">
                 <img src="img/IDA_Logo.jpg" width="100">
             </div>
+            <script>
+                $(function() {          
+                $('#top').scrollUpMenu({
+                waitTime: 0,
+                transitionTime: 150,
+                menuCss: { 'position': 'static', 'top': 'auto'}
+                });
+                });
+            </script>
         </div>
         <div class="subnavbar">
             <div class="subnavbar-inner">

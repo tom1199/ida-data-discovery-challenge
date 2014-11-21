@@ -64,7 +64,6 @@
 .img-cover {
 	width: 100%;
 	max-width: 1430px;
-	min-height: 226px;
 	margin-top: 5px;
 	padding-top: 0px;
 	background-image: url('/img/IDA_Banner.png');
